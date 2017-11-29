@@ -1,0 +1,351 @@
+@charset "UTF-8";
+@import "header.css";
+@import "footer.css";
+/* 通用 */
+body,div,p,span,ul,li,a,nav,img,button,input,h1,h2,h3,h4,h5,h6,em{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body{
+    font-family: "微软雅黑",arial;
+}
+ul,li{
+   list-style: none; 
+}
+a{
+    text-decoration: none;
+    &:focus{
+        text-decoration: none;
+    }
+}
+input,button{
+    outline: none;
+}
+img{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+	.container{
+	    width: 1400px;
+	}
+}
+
+@keyframes mylogo{
+    0%{transform: rotateY(0deg);}
+    25%{transform: rotateY(90deg);}
+    50%{transform: rotateY(180deg);}
+    50%{background-image: url("../img/monkey/logomonkey.jpg");}
+    75%{transform: rotateY(270deg);}
+    100%{transform: rotateY(360deg);}
+}
+
+.content{/* 页面主体content开始 */
+    width: 100%;
+    
+    .container{
+        min-width: 1200px;
+    }
+    
+    .content-logo{/* logo部分开始 */
+        width: 100%;
+        background-color: #FFFFFF;
+        margin-top: 52px;
+        text-align: center;
+        height: 79px;
+        padding-top: 16px;
+        
+        a{
+            display: inline-block;
+        }
+        
+        span{
+            display: inline-block;
+            width: 160px;
+            height: 53px;
+            background: {
+                image: url("../img/monkey/onkey.png");
+                repeat: no-repeat;
+                size: auto 100%;
+                position: center center;
+            }
+        }
+        
+        a:hover span{
+            animation: mylogo 2s;
+        }
+        
+        input{
+            position: absolute;
+            top: 17px;
+            right: 26px;
+            width: 201px;
+            height: 44px;
+            border: 1px solid #000000;
+            padding: {
+                left: 5px;
+                right: 33px;
+            }
+        }
+        
+        em{
+            position: absolute;
+            right: 37px;
+            top: 29px;
+            width: 23px;
+            height: 23px;
+            background: {
+                image: url("../img/monkey/椭圆1.png");
+                repeat: no-repeat;
+            }
+            cursor: pointer;
+        }
+    }// logo部分结束 
+    
+    .content-banner{/* content-banner开始 */
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 42px;
+        
+        #ul1{
+            width: 400%;
+            
+            li{
+                float: left;
+                width: 25%;
+                
+                img{
+                    width: 100%;
+                    cursor: auto;
+                }
+            }
+        }
+        #ul2{
+            position: absolute;
+            bottom: 22px;
+            left: 50%;
+            margin-left: -52px;
+            overflow: hidden;
+            display: block;
+            
+            li{
+                float: left;
+                width: 12px;
+                height: 12px;
+                margin: 0 7px;
+                cursor: pointer;
+                border-radius: 6px;
+                background-color: #FFFFFF;
+                
+                &.on{
+                    background-color: #6f6f6f;
+                }
+            }
+        }
+    }// content-banner结束
+    
+    .content-cont1{
+        margin-bottom: 45px;
+        
+        a{
+            color: #000000;
+            line-height: 33px;
+        }
+        
+        .image{
+            width: 100%;
+            color: #000000;
+            
+            img{
+                width: 100%;
+                height: 617px;
+            }
+            &:hover>span{
+                display: inline-block;
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,.2);
+            }
+            
+            .image-top{
+                width: 100%;
+                height: 288px;
+                text-align: center;
+                background-color: #f6f6f6;
+                padding: {
+                    top: 65px;
+                    bottom: 57px;
+                }
+                
+                h1{
+                    img{
+                        width: auto;
+                        height: auto;
+                        cursor: auto;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    width: 23px;
+                    height: 1px;
+                    background-color: #9a9a9a;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            
+            .image-bottom{
+                width: 100%;
+                height: 289px;
+                text-align: center;
+                border: 1px solid #E0E0E0;
+                margin-top: 40px;
+                padding-top: 2px;
+                cursor: pointer;
+                padding-bottom: 9px;
+                
+                img{
+                    width: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                &:hover div{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0,0,0,.2);
+                }
+            }
+        }
+        
+        .desc{
+            padding-top: 17px;
+            color: #000000;
+            
+            button{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                font-size: 0;
+                border: 0;
+            }
+            
+            a{
+                line-height: 21px;
+            }
+            a:hover{
+                color: #6F6F6F;
+            }
+        }
+    }
+    
+    .content-cont3,.content-cont4{
+        margin-bottom: 45px;
+        
+        a{
+            color: #000000;
+            line-height: 33px;
+        }
+        
+        .image{
+            width: 100%;
+            color: #000000;
+            
+            img{
+                width: 100%;
+                height: 293px;
+            }
+            
+            &:hover>span{
+                display: inline-block;
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,.2);
+            }
+            
+            .image-top{
+                width: 100%;
+                height: 352px;
+                text-align: center;
+                background-color: #f6f6f6;
+                padding: {
+                    top: 65px;
+                    bottom: 57px;
+                }
+                
+                h1{
+                    img{
+                        width: auto;
+                        height: auto;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    width: 23px;
+                    height: 1px;
+                    background-color: #9a9a9a;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+        
+        .desc{
+            padding-top: 17px;
+            color: #000000;
+            
+            button{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                font-size: 0;
+                border: 0;
+            }
+            
+            a{
+                line-height: 21px;
+            }
+            a:hover{
+                color: #6F6F6F;
+            }
+        }
+    }
+    
+    .content-cont4{
+        h1{
+            margin-bottom: 27px;
+            img{
+                width: auto;
+                height: 43px;
+                cursor: auto;
+                max-width: 100%;
+                
+            }
+        }
+        
+        .image{
+            img{
+                height: 247px;
+            }
+        }
+        
+        .desc{
+            font-size: 20px;
+        }
+    }
+}// 页面主体content结束
+
+

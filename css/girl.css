@@ -1,0 +1,25 @@
+@import url(../css/boy.css);
+.content .cloth {
+  background-color: #F6F6F6;
+}
+.content .cloth .cloth-pic {
+  color: #000000;
+}
+.content .cloth .cloth-desc {
+  text-align: left;
+}
+.content .cloth .cloth-desc a {
+  color: #000000;
+}
+.content .cloth .cloth-desc a:hover {
+  color: #6F6F6F;
+}
+.content .push-right {
+  background-color: #F6F6F6;
+  color: #000000;
+}
+.content .push-right p {
+  background-color: #000000;
+}
+
+/*# sourceMappingURL=girl.css.map */

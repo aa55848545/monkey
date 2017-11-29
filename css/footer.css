@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*通用样式*/
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+  }
+}
+/* 底部footer部分开始 */
+.footer {
+  width: 100%;
+  height: 384px;
+  background-color: #fafafa;
+  padding-top: 86px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.footer a {
+  color: #000000;
+}
+.footer li {
+  margin-bottom: 26px;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/未选中返回顶部.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.bottom:hover {
+  background-image: url(../img/选中返回顶部.png);
+}
+
+/*# sourceMappingURL=footer.css.map */

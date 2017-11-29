@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "../css/boy.css";
+
+.content{
+    .cloth{
+        background-color: #F6F6F6;
+        
+        .cloth-pic{
+            color: #000000;
+        }
+        
+        .cloth-desc{
+            text-align: left;
+            a{
+                color: #000000;
+                &:hover{
+                    color: #6F6F6F;
+                }
+            }
+        }
+    }
+    
+    .push-right{
+        background-color: #F6F6F6;
+        color: #000000;
+        p{
+            background-color: #000000;
+        }
+    }
+}

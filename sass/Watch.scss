@@ -1,0 +1,465 @@
+@charset 'UTF-8';
+/*通用样式*/
+body,dl,dd,h1,h2,h3,h4,h5,h6,p,form,ol,ul {
+  margin: 0;
+  padding: 0;
+}
+ 
+ol, ul {
+  list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1400px){
+    .container{
+        width: 1400px;
+    }
+}
+
+.header{
+    nav{
+        .nav-left{
+            li{
+                span{
+                    background-image: url(../img/man/房子线性.png);
+                }
+                &.on{
+                    background-color: #FFFFFF;
+                    a{
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*logo*/
+.logo{
+    position: relative;
+    margin-top: 52px;
+    height: 79px;
+    line-height: 79px;
+    text-align: center;
+    
+    span{
+        display: inline-block;
+        vertical-align: middle;
+        width: 160px;
+        height: 53px;
+        background: url("../img/Normal/logo.png") no-repeat;
+        background-size: 100%;
+        
+        a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+    
+    input{
+        position: absolute;
+        top: 17px;
+        right: 26px;
+        width: 201px;
+        height: 44px;
+        outline: none;
+        padding-right: 35px;
+    }
+    
+    em{
+        position: absolute;
+        top: 28px;
+        right: 37px;
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        background: url("../img/Normal/search-icon.png") no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+    }
+}
+
+/*内容1*/
+.content-cont1{
+    margin-top: 56px;
+}
+
+.content-cont1-left{
+    width: 100%;
+    height: 516px;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-top: 231px;
+    
+    p{
+        font-size: 50px;
+    }
+}
+
+.content-cont1-right{
+    width: 100%;
+    height: 516px;
+    
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 516px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+/*内容2*/
+.content-cont2{
+    margin-top: 42px;
+}
+
+/*内容2 左边*/
+.content-cont2-left-top{
+    width: 100%;
+    
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 910px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    
+    p{
+        font-size: 30px;
+        margin-top: 10px;
+        
+        a{
+            display: inline;
+            color: #000;
+            
+            &:hover{
+                color: #6f6f6f;
+            }
+        }
+    }
+}
+
+.content-cont2-left-bot{
+    width: 100%;
+    margin-top: 67px;
+    
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 429px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+   
+    p{
+        font-size: 30px;
+        margin-top: 10px;
+        
+        a{
+            display: inline;
+            color: #000;
+            
+            &:hover{
+                color: #6f6f6f;
+            }
+        }
+    }
+}
+
+/*内容2 右边*/
+.content-cont2-right-top{
+    width: 100%;
+    
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 429px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+   
+    p{
+        font-size: 30px;
+        margin-top: 10px;
+        
+        a{
+            display: inline;
+            color: #000;
+            
+            &:hover{
+                color: #6f6f6f;
+            }
+        }
+    }
+}
+
+.content-cont2-right-bot{
+    width: 100%;
+    margin-top: 67px;
+    
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 910px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+      
+    p{
+        font-size: 30px;
+        margin-top: 10px;
+        
+        a{
+            display: inline;
+            color: #000;
+            
+            &:hover{
+               color: #6f6f6f;
+            }
+        }
+    }
+}
+
+/*内容3*/
+@media screen and (min-width: 1400px){
+    .big-box{
+        width: 83.33%;
+        min-width: 1400px;
+        height: 770px;
+        margin: 19px auto 50px;
+        background: url("../img/Watch/pic09.png") no-repeat;
+        
+        ul{
+            margin: 261px auto 0;
+            
+            li{
+                float: left;
+                width: 318px;
+                height: 448px;
+                margin-right: 32px;
+                
+                span{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #fff;
+                    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@meida screen and (max-width: 1399px){
+    .big-box{
+        width: 100%;
+        min-width: 1200px;
+        height: 770px;
+        margin: 19px auto 50px;
+        background: url("../img/Life/pic10.png") no-repeat;
+        
+        ul{
+            margin: 261px auto 0;
+            
+            li{
+                float: left;
+                width: 318px;
+                height: 448px;
+                margin-right: 32px;
+                position: relative;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                 
+            }
+        }
+    }
+}
+
+.btn-buy{
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    background: url("../img/Watch/buy-icon.png") no-repeat;
+}
+
+/*内容4*/
+/*内容4 左边*/
+.content-cont4-left-top{
+    width: 100%;
+    height: 43px;
+    margin-bottom: 20px;
+    background: url("../img/Normal/txt01.png") no-repeat;
+}
+
+.content-cont4-left-bot{
+    width: 100%;
+    margin-bottom: 45px;
+    
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 247px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    
+    p{
+        font-size: 30px;
+        margin-top: 10px;
+        
+        a{
+            display: inline;
+            color: #000;
+            
+            &:hover{
+                color: #6f6f6f;
+            }
+        }
+    }
+}
+
+/*内容4 中间*/
+.content-cont4-mid-top{
+    width: 100%;
+    height: 43px;
+    margin-bottom: 20px;
+    background: url("../img/Normal/txt03.png") no-repeat;
+}
+
+.content-cont4-mid-bot{
+    width: 100%;
+    margin-bottom: 45px;
+    
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 247px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    
+    p{
+        font-size: 30px;
+        margin-top: 10px;
+        
+        a{
+            display: inline;
+            color: #000;
+            
+            &:hover{
+                color: #6f6f6f;
+            }
+        }
+    }
+}
+
+/*内容4 右边*/
+.content-cont4-right-top{
+    width: 100%;
+    height: 43px;
+    margin-bottom: 20px;
+    background: url("../img/Normal/txt02.png") no-repeat;
+}
+
+.content-cont4-right-bot{
+    width: 100%;
+    margin-bottom: 45px;
+    
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 247px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    
+    p{
+        font-size: 30px;
+        margin-top: 10px;
+        
+        a{
+            display: inline;
+            color: #000;
+            
+            &:hover{
+                color: #6f6f6f;
+            }
+        }
+    }
+}

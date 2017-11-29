@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* 通用 */
+body,div,p,span,ul,li,a,nav,img,button,input,h1,h2,h3,h4,h5,h6,em{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body{
+    font-family: "微软雅黑",arial;
+}
+ul,li{
+   list-style: none; 
+}
+a{
+    text-decoration: none;
+    &:focus{
+        text-decoration: none;
+    }
+}
+input,button{
+    outline: none;
+}
+img{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+    .container{
+        width: 1400px;
+    }
+}
+
+.header{/* 顶部header开始 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    background-color: #000000;
+    font-size: 20px;
+    height: 52px;
+    overflow: hidden;
+    
+    
+    nav{/* 导航栏nav开始 */
+        width: 100%;
+        
+        a{
+            color: #FFFFFF;
+            
+            img{
+                vertical-align: top;
+            }
+        }
+        
+        a:hover{
+            text-decoration: none;
+        }
+        
+        .nav-left{
+            float: left;
+            
+            li{
+                float: left;
+                padding: 0 15px;
+                height: 52px;
+                line-height: 52px;
+                
+                a{
+                    display: inline-block;
+                    height: 52px;
+                }
+                
+                span{
+                    position: relative;
+                    bottom: -2px;
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background: {
+                        image: url("../img/Normal/home-icon.png");
+                        repeat: no-repeat;
+                        size: 100%;
+                    }
+                }
+            }
+            
+            li:hover{
+                background-color: #FFFFFF;
+            }
+            li:hover a{
+                color: #000000;
+            }
+            li:hover span{
+                background-image: url("../img/Normal/home-icon-on.png");
+            }
+        }
+        
+        .nav-right{
+            float: right;
+            font-family: arial;
+            
+            li{
+                float: left;
+                line-height: 52px;
+                padding: 0 15px;
+            }
+            
+            li:hover{
+                background-color: #FFFFFF;
+            }
+            li:hover a{
+                color: #000000;
+            }
+        }
+    }
+    
+}// 顶部header结束
+
+.back-top{
+    position: fixed;
+    z-index: 999;
+    bottom: 100px;
+    right: 100px;
+    
+    a{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: url("../img/Normal/back-icon.png") no-repeat;
+        
+        &:hover{
+            background: url("../img/Normal/back-icon-on.png") no-repeat;
+        }
+    }
+}
+@keyframes mylogo{
+    0%{transform: rotateY(0deg);}
+    25%{transform: rotateY(90deg);}
+    50%{transform: rotateY(180deg);}
+    50%{background-image: url("../img/monkey/logomonkey.jpg");}
+    75%{transform: rotateY(270deg);}
+    100%{transform: rotateY(360deg);}
+}
+.content{
+    .logo{
+        span:hover{
+            background-size: auto 100%; 
+            background-position: center center;
+            animation: mylogo 2s;
+        }
+    }
+}
+

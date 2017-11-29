@@ -1,0 +1,360 @@
+@charset "UTF-8";
+@import url(../css/header.css);
+@import url(../css/footer.css);
+/* 通用 */
+body, div, p, span, ul, li, a, nav, img, button, input, h1, h2, h3, h4, h5, h6, em {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  font-family: "微软雅黑",arial;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+
+input, button {
+  outline: none;
+}
+
+img {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+  }
+
+  .cloth {
+    width: 83.33%;
+    min-width: 1400px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .cloth {
+    width: 100%;
+    min-width: 1200px;
+  }
+}
+.container {
+  min-width: 1200px;
+}
+
+@keyframes mylogo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    background-image: url("../img/monkey/logomonkey.jpg");
+  }
+  75% {
+    transform: rotateY(270deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.header nav .nav-left li span {
+  background-image: url(../img/man/房子线性.png);
+}
+.header nav .nav-left li.on {
+  background-color: #FFFFFF;
+}
+.header nav .nav-left li.on a {
+  color: #000000;
+}
+
+.content {
+  /* 页面主体content开始 */
+  width: 100%;
+}
+.content .content-logo {
+  /* logo部分开始 */
+  width: 100%;
+  background-color: #FFFFFF;
+  margin-top: 52px;
+  text-align: center;
+  height: 79px;
+  padding-top: 16px;
+}
+.content .content-logo a {
+  display: inline-block;
+}
+.content .content-logo span {
+  display: inline-block;
+  width: 160px;
+  height: 53px;
+  background-image: url("../img/monkey/onkey.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+}
+.content .content-logo a:hover span {
+  animation: mylogo 2s;
+}
+.content .content-logo input {
+  position: absolute;
+  top: 17px;
+  right: 26px;
+  width: 201px;
+  height: 44px;
+  border: 1px solid #000000;
+  padding-left: 5px;
+  padding-right: 33px;
+}
+.content .content-logo em {
+  position: absolute;
+  right: 37px;
+  top: 29px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/monkey/椭圆1.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.content .content-boy {
+  margin-top: 56px;
+}
+.content .content-boy .content-boy-left {
+  width: 100%;
+  height: 516px;
+  background-color: #F6F6F6;
+  overflow: hidden;
+}
+.content .content-boy .content-boy-left img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -101px;
+}
+.content .content-boy .content-boy-right {
+  height: 516px;
+  width: 100%;
+}
+.content .content-boy .content-boy-right img {
+  width: 100%;
+  height: 516px;
+}
+.content .cont-sell-top {
+  margin-top: 59px;
+  margin-bottom: 42px;
+  height: 1px;
+  background-color: #E0E0E0;
+}
+.content .cont-sell-top p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 30px;
+  font-family: "微软雅黑";
+  padding-right: 41px;
+  background-color: #FFFFFF;
+}
+.content .cont-sell-left {
+  width: 100%;
+}
+.content .cont-sell-left img {
+  width: 100%;
+  height: 828px;
+}
+.content .cont-sell-left a {
+  display: inline-block;
+  color: #000000;
+  font-size: 30px;
+  font-family: "微软雅黑";
+  cursor: pointer;
+}
+.content .cont-sell-left a:hover {
+  color: #6F6F6F;
+}
+.content .cont-sell-left .desc {
+  height: 107px;
+}
+.content .image:hover span, .content .cloth-pic:hover span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.content .cont-sell-right {
+  width: 100%;
+}
+.content .cont-sell-right img {
+  width: 100%;
+  height: 734px;
+}
+.content .cont-sell-right a {
+  display: inline-block;
+  color: #000000;
+  font-size: 30px;
+  font-family: "微软雅黑";
+  cursor: pointer;
+}
+.content .cont-sell-right a:hover {
+  color: #6F6F6F;
+}
+.content .cloth {
+  margin: 0 auto;
+  background-color: #000000;
+  padding: 40px 0px;
+}
+.content .cloth .cloth-pic {
+  width: 100%;
+  height: 389px;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+.content .cloth .cloth-pic img {
+  width: 100%;
+  height: 389px;
+}
+.content .cloth .cloth-pic h1 {
+  margin-top: 34px;
+  font-size: 96px;
+  line-height: 75px;
+}
+.content .cloth .cloth-pic h2 {
+  margin-top: 63px;
+  font-size: 50px;
+  line-height: 50px;
+}
+.content .cloth .cloth-pic h3 {
+  margin-top: 21px;
+  font-size: 30px;
+  line-height: 30px;
+}
+.content .cloth .cloth-pic button {
+  margin-top: 32px;
+  width: 110px;
+  height: 44px;
+  background-color: transparent;
+  border: 0;
+}
+.content .cloth .cloth-pic button img {
+  width: 100%;
+  height: 100%;
+}
+.content .cloth .cloth-desc {
+  font-size: 30px;
+  text-align: center;
+}
+.content .cloth .cloth-desc a {
+  color: #FFFFFF;
+}
+.content .cloth .cloth-desc a:hover {
+  color: #F6F6F6;
+}
+.content .push-left {
+  width: 100%;
+  height: 509px;
+  margin-bottom: 41px;
+}
+.content .push-left img {
+  width: 100%;
+  height: 509px;
+}
+.content .push-left:hover span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.content .push-right {
+  width: 100%;
+  height: 509px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  overflow: hidden;
+}
+.content .push-right h2 {
+  margin-top: 97px;
+  font-size: 30px;
+}
+.content .push-right p {
+  margin-top: 45px;
+  display: inline-block;
+  width: 80px;
+  height: 1px;
+  background-color: #FFFFFF;
+}
+.content .push-right h1 {
+  margin-top: 53px;
+  font-size: 50px;
+}
+.content .push-right button {
+  margin-top: 75px;
+  width: 180px;
+  height: 68px;
+  background-color: transparent;
+  border: 0;
+}
+.content .push-right button img {
+  width: 100%;
+  height: 100%;
+}
+.content .content-cont4 h1 {
+  margin-bottom: 27px;
+}
+.content .content-cont4 h1 img {
+  height: 43px;
+  cursor: auto;
+  max-width: 100%;
+}
+.content .content-cont4 .image a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.content .content-cont4 .image img {
+  width: 100%;
+  height: 247px;
+}
+.content .content-cont4 .desc {
+  font-size: 20px;
+  margin-bottom: 58px;
+}
+.content .content-cont4 .desc a {
+  color: #000000;
+}
+.content .content-cont4 .desc a:hover {
+  color: #6F6F6F;
+  text-decoration: none;
+}
+.content .content-cont4 .desc a span {
+  font-size: 25px;
+}
+.content .content-cont4 .desc a em {
+  font-size: 30px;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=boy.css.map */
